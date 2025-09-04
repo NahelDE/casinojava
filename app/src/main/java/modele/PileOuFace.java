@@ -1,4 +1,5 @@
-package game;
+package modele;
+
 import java.util.Random;
 
 import static java.lang.Thread.sleep;

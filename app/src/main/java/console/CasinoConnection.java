@@ -1,4 +1,7 @@
-package game;
+package console;
+
+import modele.GestionJoueur;
+import modele.Joueur;
 
 import java.util.Scanner;
 

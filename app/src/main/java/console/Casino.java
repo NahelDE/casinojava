@@ -1,4 +1,8 @@
-package game;
+package console;
+
+import modele.GestionJoueur;
+import modele.Joueur;
+import modele.PileOuFace;
 
 import java.util.Scanner;
 
@@ -28,6 +32,10 @@ public class Casino {
             switch (choix) {
                 case 1:
                     lancerPileOuFace();
+                case 2:
+                    //lancerRouletteSimple();
+                case 3:
+                    //lancerBlackJack;
             }
         } while (choix != 0);
 

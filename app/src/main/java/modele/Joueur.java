@@ -1,4 +1,4 @@
-package game;
+package modele;
 
 public class Joueur {
     private String nom;

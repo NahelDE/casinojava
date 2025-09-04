@@ -1,6 +1,5 @@
-package game;
+package modele;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;

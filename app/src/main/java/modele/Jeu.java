@@ -1,4 +1,4 @@
-package game;
+package modele;
 
 public interface Jeu {
     boolean jouer(); //fais la logique , renvoie si le joueur a gagné
