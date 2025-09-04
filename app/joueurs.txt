@@ -1,0 +1,7 @@
+;;500.0
+1;1;300.0
+eer;eer;500.0
+t;t;1678.0
+Nahel;Nahel;400.0
+zea;aze;500.0
+eeree;eerrr;500.0

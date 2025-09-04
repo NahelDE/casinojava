@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceGraphique.CasinoController" spacing="20" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label fx:id="soldeLabel" text="Solde : 0 €" style="-fx-font-size: 18px;"/>
+    <Button fx:id="btnPileOuFace" text="Pile ou Face" onAction="#ouvrirJeuPileOuFace"/>
+    <Button fx:id="btnQuitter" text="Quitter" onAction="#quitterCasino"/>
+</VBox>

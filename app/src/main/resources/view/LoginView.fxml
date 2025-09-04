@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="interfaceGraphique.LoginController" spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Casino Login" style="-fx-font-size: 20px;"/>
+    <TextField fx:id="usernameField" promptText="Nom"/>
+    <PasswordField fx:id="passwordField" promptText="Mot de passe"/>
+
+    <HBox spacing="10">
+        <Button fx:id="loginButton" text="Connexion" />
+        <Button fx:id="registerButton" text="Inscription" />
+    </HBox>
+
+    <Label fx:id="messageLabel" style="-fx-text-fill: red;" />
+</VBox>

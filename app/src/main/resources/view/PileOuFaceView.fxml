@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="interfaceGraphique.PileOuFaceController"
+      spacing="15">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label fx:id="soldeLabel" text="Solde : 0 €"/>
+
+    <TextField fx:id="miseField" promptText="Entrez votre mise"/>
+
+    <HBox spacing="10">
+        <Button fx:id="pileButton" text="Pile" onAction="#choisirPile"/>
+        <Button fx:id="faceButton" text="Face" onAction="#choisirFace"/>
+    </HBox>
+
+    <ImageView fx:id="pieceImage" fitWidth="100" fitHeight="100"/>
+    <Label fx:id="resultatLabel" text="Résultat ici"/>
+
+    <Button text="Quitter le jeu" onAction="#quitterJeu"/>
+
+</VBox>
