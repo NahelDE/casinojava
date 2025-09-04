@@ -10,16 +10,16 @@ public class Carte {
         this.couleur = couleur;
 
         switch (stringValeur) {
-            case "a":
+            case "AS":
                 intValeur = 11;
                 break;
-            case "r":
+            case "ROI":
                 intValeur = 10;
                 break;
-            case "d":
+            case "DAME":
                 intValeur = 10;
                 break;
-            case "v":
+            case "VALET":
                 intValeur = 10;
                 break;
             default:

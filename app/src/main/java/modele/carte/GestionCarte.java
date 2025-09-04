@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Collections;
 
 public class GestionCarte {
-    private String valeur [] = {"a","r","d","v","10","9","8","7","6","5","4","3","2"};
-    private String couleur [] = {"C","K","P","T"};
+    private String valeur [] = {"AS","ROI","DAME","VALET","10","9","8","7","6","5","4","3","2"};
+    private String couleur [] = {"♡","♦","♠","♣"};
 
     private List<Carte> paquet;
 
@@ -43,7 +43,7 @@ public class GestionCarte {
 
         if (res > 21) {
             for (Carte c : main) {
-                if (c.getValeur().equalsIgnoreCase("a") && c.getIntValeur() == 11) {
+                if (c.getValeur().equalsIgnoreCase("as") && c.getIntValeur() == 11) {
                     c.setIntValeur(1);
                     res = 0;
                     for (Carte cc : main) res += cc.getIntValeur();

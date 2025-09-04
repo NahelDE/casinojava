@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class GestionJoueur {
     private Map<String , Joueur> joueurs = new HashMap<String , Joueur>(); // dictionnaire en python avec une clé string : le nom et une valeur Joueur qui contient nom mdp et solde
-    private String fic = "./app/joueurs.txt";
+    private String fic = "./joueurs.txt";
 
     public GestionJoueur() {
         chargerJoueur(); //a la creation d'une gestion joueur on load les joueurs dans le fic

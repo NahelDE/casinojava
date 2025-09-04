@@ -4,31 +4,28 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.image.ImageView?>
-<VBox xmlns="http://javafx.com/javafx/21"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="interfaceGraphique.PileOuFaceController"
-      spacing="15">
+<VBox prefHeight="328.0" prefWidth="348.0" spacing="15" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceGraphique.PileOuFaceController">
 
     <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets bottom="20" left="20" right="20" top="20" />
     </padding>
 
-    <Label fx:id="soldeLabel" text="Solde : 0 €"/>
+    <Label fx:id="soldeLabel" text="Solde : 0 €" />
 
-    <TextField fx:id="miseField" promptText="Entrez votre mise"/>
+    <TextField fx:id="miseField" promptText="Entrez votre mise" />
 
     <HBox spacing="10">
-        <Button fx:id="pileButton" text="Pile" onAction="#choisirPile"/>
-        <Button fx:id="faceButton" text="Face" onAction="#choisirFace"/>
+        <Button fx:id="pileButton" onAction="#choisirPile" text="Pile" />
+        <Button fx:id="faceButton" onAction="#choisirFace" text="Face" />
     </HBox>
 
-    <ImageView fx:id="pieceImage" fitWidth="100" fitHeight="100"/>
-    <Label fx:id="resultatLabel" text="Résultat ici"/>
+    <ImageView fx:id="pieceImage" fitHeight="100" fitWidth="100" />
+    <Label fx:id="resultatLabel" text="Résultat ici" />
 
-    <Button text="Quitter le jeu" onAction="#quitterJeu"/>
+    <Button onAction="#quitterJeu" text="Quitter le jeu" />
 
 </VBox>

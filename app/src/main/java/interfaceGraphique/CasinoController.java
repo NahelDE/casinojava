@@ -57,6 +57,21 @@ public class CasinoController {
     }
 
     @FXML
+    private void ouvrirJeuBlackjack() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/BlackjackView.fxml"));
+        Parent root = loader.load();
+
+        BlackjackController controller = loader.getController();
+        controller.setJoueurEtGestion(joueur, gestionJoueur);
+        controller.setCasinoController(this);
+
+        Stage stage = new Stage();
+        stage.setTitle("Blackjack");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    @FXML
     private void quitterCasino() {
         Stage stage = (Stage) btnQuitter.getScene().getWindow();
         stage.close();
